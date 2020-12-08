@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Rajdhani', sans-serif;
+    color: #505962;
+    /*background-color: #f5f4e4;*/
+    background-color: #ffffff;
+
+} 
+
+/*==============================Navigation===========================*/
+
+.navbar-brand img {
+    background: url(../images/studentlogo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3.1rem; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9px;
+    letter-spacing: 0.2rem;
+   /* background: rgba(204, 201, 201, 0.76)!important; */
+    background: rgba(87, 85, 85, 0.637)!important;
+    z-index: -1;
+    
+}
+
+/*--.navbar-brand {
+    background: url(../images/studentlogo.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3.1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}--*/
+
+.nav-item {
+    padding: 0.6rem;
+}
+
+.nav-link {
+    color: #fff8dc!important;
+}
+
+.nav-link.nav-link.active,
+.nav-link:hover {
+    color: #80dfff!important;
+}
+
+.navbar-nav li {
+    padding-right: 0.7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    padding-top: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #80dfff;
+}
+
+/*--Landing Page--*/
+
+
+
+
+/*#hero-image {
+    height: 600px;
+    width: 100%;
+}*/
+
+
+
+/*--- Fixed Landing Page Section --*/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: table;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360px!important;
+}
+
+/*--
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+--*/
+
+
+/*--Carousel--*/
+
+
+
+.carousel-inner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.carousel-inner {
+    max-height: 880px!important;
+/* specify a mx height set so it doesnt span down the pg will-change
+go under screen*/
+    z-index: 1;
+}
+
+
+
+/*--Changing Carousel Transition Speed --*/
+.carousel-item-next, 
+.carousel-item-prev, 
+.carousel-item.active {
+transition: transform 1.6s ease;
+}
+
+
+/*--Changing Carousel content --*/
+.carousel-caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+    
+
+}
+
+/*--
+.caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+
+}
+--*/
+
+.bg-custom {
+    background-color: rgba(230, 201, 201, 0.4);
+    color: white;
+    border-radius: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.carousel-caption h1 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3!important;
+}
+
+.carousel-caption h3 {
+    font-size: 1.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+
+}
+
+.btn-lg, .btn-md {
+    border-radius: .5rem;
+    text-transform: uppercase;
+    border-width: medium;
+    border: .1rem solid #4981b3;
+    background-color: #4981b3;
+}
+
+.carousel-caption p {
+    text-align: right;
+    font-weight: 300;
+}
+
+/*--Info history--*/
+
+#infoheading h1 {
+    text-align: center;
+}
+
+.infohistory {
+    background-color: rgba(126, 89, 89, 0.521);
+
+}
+
+/*==============================Editorials===========================*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 786px;
+  column-gap: 1.5em;
+  clear: both;
+  
+}
+
+/* The Masonry Brick */
+.brick {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+  
+}
+
+.brick img {
+    width: 100%
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/*==============================Tour===========================*/
+
+#tour .tourcontents {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/scriptevent6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.tourheadingbox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.tourheadingbox .tourheadingcontent {
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    padding: 40px;
+    transition: .5s;
+
+}
+
+.tourheadingbox .tourheadingcontent:hover {
+    background: #e91e63;
+
+}
+
+.tourheadingbox .tourheadingcontent h1 {
+    margin: 2px;
+    padding: 2px;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.tourheadingbox .tourheadingcontent p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.tourevents {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    float: right;
+    box-sizing: border-box;
+}
+
+.tourevents #tourdetailrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+.tourevents #tourdetailrow > li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 80px;
+    margin: 10px 0;
+    padding-right: 5px;
+    
+}
+
+.tourevents #tourdetailrow > li .tourtime {
+    position: relative;
+    padding: 30px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+    /*padding-top: 5px;
+    margin-right: 6px;*/
+}
+
+
+
+.tourevents #tourdetailrow > li:hover .tourtime {
+    background: #e91e63;
+}
+
+.tourevents #tourdetailrow > li .tourtime h3 {
+    position: absolute;
+    margin:0;
+    padding:0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    line-height: 22px;
+}
+
+.tourevents #tourdetailrow > li .tourtime h3 span {
+    font-size: 20px;
+}
+
+.tourevents #tourdetailrow > li .tourdetails {
+    padding: 8px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 50%;
+    float: left;
+}
+
+.tourevents #tourdetailrow > li .tourdetails > ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    
+    
+    
+
+}
+
+.tourevents #tourdetailrow > li .tourdetails a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border: 2px solid #262626;
+    margin-top: 5px;
+    font-size: 10px;
+    transition: .5s;
+    float: right;
+
+}
+
+.tourevents #tourdetailrow > li .tourdetails a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+/*==============================Tour===========================*/
+
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+
+/* Black buttons with extra padding and without rounded borders */
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+/*--Media Queries--*/
+
+/*--Device under 1199px (xl)--*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*--Devices under 768px (md)--*/
+@media (max-width: 767.98px) {
+
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*--Bootstrap Mobile Gutter Fix--*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
