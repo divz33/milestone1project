@@ -5,19 +5,410 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    
-    <title>milestone1project</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!--link rel="stylesheet" href="css/fixed.css"-->
+    <title>The SCRIPT-milestone1project</title>
 </head>
-<body>
-    <header>
+<body data-spy="scroll" data-target="" data-offset="#navbarResponsive">
+<!--Start Home Section-->
+
+    <div id="home">
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/studentlogo.jpeg" alt="The SCRIPT" title="The SCRIPT"></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#infohistory">Bio-History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#music">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tour">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html#editorials">Editorials</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#search">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#join">Join</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--End of Navigation-->
+
+        <!--Start Landing Page Section-->
+        <div class="landing">
+            <div class="home-wrap">
+
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6500">
+
+                    <!--Carosel content-->
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="hero-image">
+                            <img src="assets/images/homeimage.png" alt="heroimage" class="w-100" height="870px">
+                            <div class="carousel-caption text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-8 bg-custom d-none d-md-block py-3 px-0">
+                                            <h1>Welcome to The Script</h1>
+                                            <div class="border border-primary w-50 mx-auto my-3"></div>
+                                            <h3 class="pb-3">Discover latest album, Tour & more ...</h3>
+                                            <a class="btn btn-outline-dark btn-lg" href="#music">Discover now</a>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/thelasttime.jpg" alt="music" class="w-100" height="870px">
+                            <div class="carousel-caption text-center">
+                                <div class="container">
+                                    <div class="row justify-content-end text-right">
+                                        <div class="col-5 bg-custom d-none d-md-block py-3 px-0 pr-3">
+                                            <p class="lead pb-3">Latest Album & Single</p>
+                                            <a href="#music" class="btn btn-primary btn-outline-dark btn-lg">Find Out Here</a>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/tour1.jpg" alt="tour" class="w-100" height="870px">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-start text-left">
+                                        <div class="col-7 bg-custom d-none d-md-block py-3 px-0 pl-3">
+                                            <h3 class="pb-3">For Latest Tour</h3>
+                                            <p class="lead">Buy tickets, venue &  private bookings ...</p>
+                                            <a href="#tour" class="btn btn-primary btn-lg ml-2">Buy now</a>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Ending of Carosel content-->
+
+                    <!--Previous & Next Buttons-->
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="fas fa-chevron-left fa-2x"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="fas fa-chevron-right fa-2x"></span>
+                    </a>
+
+                    <!--Ending of Previous & Next Buttons-->
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <!--div class="caption text-center">
+            <h1>Welcome to The Script</h1>
+            <h3>Discover latest album & more</h3>
+            <a class="btn btn-outline-dark btn-lg" href="#music">Discover now</a>
+        </div-->
+        <!--End Landing Page Section-->
+
+    </div>
+
+<!--End Home Section-->
+
+<!--Start Info & history of the band Section-->
+
+    <div id="infohistory" class="offset">
+        <div class="col-12 text-center mt-5" id="infoheading"></div>
+            <h1 class="text-dark text-center pt-4">Biography</h1>
+            <div class="border-top border-primary w-25 mx-auto my-3"></div>
+        <div class="col-12 bg-custom d-none d-md-block py-3 px-3 pr-3 pl-3">
+            <p class="lead">A self-described "Celtic soul" outfit, the Script are known for their polished blend of contemporary R&B and anthemic pop/rock. Forging a unique sound based on a diverse list of influences (including U2, the Neptunes, Timbaland, and Van Morrison), the Script broke through with their chart-topping self-titled debut. They have remained audience favorites in the U.K. with albums like 2010's Science & Faith and 2017's Freedom Child.</p>
+            <p class="lead">Hailing from Dublin, the Script were founded by guitarist Mark Sheehan and vocalist Danny O'Donoghue in 2007. The two musicians had previously performed together in Mytown, an Irish-based boy band who enjoyed moderate success at home but failed to generate international acclaim. After the group disbanded, Sheehan and O'Donoghue spent several years in Los Angeles, where they worked as producers alongside the likes of Teddy Riley, the Neptunes, and Rodney Jerkins. They later relocated to Dublin and recruited Glen Power as their drummer. The Script saw their debut single, "We Cry," receive heavy airplay in both Ireland and Britain, as well as a nod from the influential BBC Radio DJ Jo Whiley. After signing with Phonogenic Records, the group relocated to London, where they debuted in 2008 with the eponymous The Script. The album proved to be a meteoric success, topping the charts in multiple countries and establishing the group as one of the year's most popular newcomers. The group were also nominated for a Choice Music Prize for Irish Album of the Year. The buzz carried through to 2009, when Paul McCartney and U2 both enlisted the band to open several sold-out shows.</p>
+            <p class="lead">The Script's sophomore effort, Science & Faith, followed in September of 2010, extending their global reach further by hitting the Top Five in both Australia and the U.S., but also reaching the number one spot in both the U.K. and Ireland, just as their debut had done. Summer 2011 brought packed arena shows in South Africa, but also saw them play to 55,000 people at a headline show in Dublin, a performance that was later released as the concert film Homecoming.</p>
+            <p class="lead">During the first half of 2012, O'Donoghue further raised the profile of the band when he appeared as a coach alongside Tom Jones, Jessie J, and will.i.am on BBC1's prime-time talent show The Voice UK. That year, the Script released their third studio album, #3 — recorded in Studio 3, Sphere Studios, Battersea — which included the single "Hall of Fame," featuring will.i.am. The album maintained their international commercial appeal, cracking the Top Ten in the Netherlands and reaching number 13 in the U.S., while the single became their most successful to date, reaching the Top Ten in no fewer than 21 countries.</p>
+            <p class="lead">Spring 2013 brought a U.K. arena tour — which had sold out in a week the previous September — before the band returned to the studio to demo new material. Inventively, the Script also brought Jamie Scallion's fictional band, the RockAteers, to life that year. They recorded and streamed online their interpretations of the songs mentioned in the Officer Kicks frontman's series of novels for young adults, The Rock 'n' Roll Diaries. When 2014 came around, Sheehan, O'Donoghue, and Power began to prepare for a number of large U.S. summer shows alongside Colorado's OneRepublic. The Script also released their fourth studio album, No Sound Without Silence, featuring the single "Superheroes." After a brief break, the Script returned in 2017 with "Divided States of America," "Written in the Scars," and "Rain," the first singles from their fifth LP, Freedom Child. In 2019, they issued the full-length Sunsets & Full Moons, which included the single "The Last Time." ~ Katherine Fulton & Andrew Leahey</p>
+        
+        </div>
+            
     
-    </header>
-    <section>
-    
+    </div>
+
+<!--End Info & history of the band Section-->
+
+<!--Start Music Section-->
+
+    <div id="music" class="offset">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/sunsetsandfullmoonsalbum.jpg" alt="Sunsets&fullmoon" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/freedomchildalbum.jpg" alt="freedomchildalbum" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/nosoundwithoutsilencealbum.jpg" alt="nosoundwithoutsilencealbum" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/no3albumcover.jpg" alt="no3albumcover" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/scienceandfaithalbum" alt="scienceandfaithalbum" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="assets/images/scriptalbum" alt="scriptalbum" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn">Buy Tickets</button>
+                </div>
+            </div>
+            
+
+
+    </div>
+
+
+    </div>
+
+<!--End Music Section-->
+
+<!--Start Tour Section-->
+
+    <section id="tour" class="offset">
+        <div class="tourcontents">
+            <div class="tourheadingbox">
+                <div class="tourheadingcontent">
+                    <h1>2021 Tour Dates</h1>
+                    <p>It will come as no surprise that due to the ongoing 
+                       Covid-19 pandemic we've made the decision to reschedule 
+                       the remainder of our tour to June 2021.
+                       Although this is disappointing for all involved, we hope 
+                       you can understand that we do this with everyone's safety 
+                       in mind. But know this, when we get back on that stage 
+                       in June it's going to be epic!
+                       Please keep hold of your tickets, they will remain valid.
+                    </p>
+                </div>
+            </div>
+            <div class="tourevents">
+                <ul id="tourdetailrow">
+                    <li>
+                        <div class="tourtime">
+                            <h3>07-08<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Amsterdam - Ziggo Dome</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>09<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Brussels - Forest National</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>12<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Newcastle - Utilita Arena</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>14-15<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Dublin, Ireland - 3ARENA</li>
+                               
+                                <li>The Script - Free for HSFE & NHS Staff</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>18<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Newmarket- Newmarket Racecourses</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>22<br><span>June</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Cork, C, Ireland - Musgrave Park</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="tourtime">
+                            <h3>16<br><span>July</span></h3>
+                        </div>
+                        <div class="tourdetails">
+                            <ul>
+                                <li>Edinburgh - Edinburgh Castle Esplanade</li>
+                                
+                                <li>The Script - Sunsets & Full Moons 2020</li>
+                            </ul>
+                            <a href="https://www.facebook.com/thescript/app/123966167614127/" target="_blank">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
     </section>
+
+<!--End Tour Section-->
+
+<!--Start Editorials Section-->
+
+    <div id="editorials" class="offset">
+
+
+    </div>
+
+<!--End Editorials Section-->
+
+<!--Start Search Section-->
+
+    <div id="search" class="offset">
+
+
+    </div>
+
+<!--End Shop Section-->
+
+<!--Start Shop Section-->
+
+    <div id="shop" class="offset">
+
+
+    </div>
+
+<!--End Shop Section-->
+
+<!--Start Join Section-->
+
+    <div id="join" class="offset">
+
+
+    </div>
+
+<!--End Join Section-->
+   <div class="container my-5"></div>
     <footer>
-    
+    <p>social media</p>
     </footer>
-    
+
+<!-- Script Source Files -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
 </body>
 </html>
